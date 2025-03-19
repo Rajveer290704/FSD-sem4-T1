@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            array=[['make', 'Ford'], ['model', 'Mustang'], ['year', 1964]]
+            function fromListToObject(array) {
+                var obj = {}
+                for (i=0;i < array.length;i++){
+                    var x=array[i]
+                    obj[x[0]]=x[1]
+                }
+                console.log(obj)
+            }
+            fromListToObject(array)
+        </script>
+    </head>
+</html>
