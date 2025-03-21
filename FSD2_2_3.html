@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="demo"></p>
+        <script>
+            function disp(sum1){
+                document.getElementById("demo").innerHTML=sum1
+            }
+            function cal(a,b,myval){
+                sum=a+b
+                myval(sum)
+            }
+            cal(5,10,disp)
+        </script>
+    </body>
+</html>

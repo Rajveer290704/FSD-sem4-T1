@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <script>
+            array=['Queen', 'Elizabeth', 'Of Hearts', 'Beyonce']
+            function transformFirstAndLast(array) {
+                var obj = {}
+                l=array.length
+                for (i=0;i < array.length;i++){
+                    obj[array[0]]=array[l-1]
+                }
+                console.log(obj)
+            }
+            transformFirstAndLast(array)
+        </script>
+    </head>
+</html>
