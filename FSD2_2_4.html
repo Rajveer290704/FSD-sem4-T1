@@ -1,0 +1,19 @@
+<html>
+  <body>
+    <p id="demo">Hello</p>
+    <script>
+      size = 10;
+      function disp() {
+        if (size > 50) {
+          return;
+        }
+        a = document.getElementById("demo");
+        a.style.fontSize = size + "px";
+        a.style.color = "blue";
+        size += 10;
+      }
+      disp();
+      setInterval(disp, 100);
+    </script>
+  </body>
+</html>
