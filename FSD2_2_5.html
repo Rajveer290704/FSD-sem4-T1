@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <p id="demo" style="font-size: 50px;">Hello</p>
+    <button onclick="chfont(1)">Increase</button>
+    <button onclick="chfont(-1)">Stop</button>
+    <button onclick="stopped=true">Decrease</button>
+    <script>
+      let size = 50,stopped=false,direction=0
+      function chfont(d) {
+        if (stopped){
+            direction=d,stopped=false
+            return
+        }
+        if((d>0 && size<=100)||(d<0 && size>=100)){
+            size+=d
+            document.getElementById("demo").style.fontSize = size + "px";
+            setTimeout(()=>chfont(d,100))
+        }
+      }
+    </script>
+  </body>
+</html>
